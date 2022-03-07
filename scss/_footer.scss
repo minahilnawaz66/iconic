@@ -1,0 +1,66 @@
+// Footer SCSS
+#footer {
+	padding: 0 30px 0 100px;
+	display: flex;
+	background-image: linear-gradient(0deg, #e25500 0%, #ffae22 100%);
+
+	@media (max-width: 1024px) {
+		padding: 0;
+	}
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+
+	.footer-links {
+		flex: 0 0 70%;
+
+		@media (max-width: 768px) {
+			text-align: center;
+		}
+
+		ul {
+			list-style: none;
+
+			@media (max-width: 1024px) {
+				padding-left: 0;
+				padding-right: 0;
+			}
+
+			li {
+				display: inline;
+
+				a {
+					text-decoration: none;
+					color: white;
+					font-size: 11px;
+					line-height: 16px;
+					color: #fffffe;
+					font-weight: bold;
+					font-family: $font-family1;
+					padding: 0 10px;
+
+					@media (max-width: 1024px) {
+						padding: 0 5px;
+					}
+				}
+			}
+		}
+
+	}
+
+	.copyright {
+		font-size: 11px;
+		line-height: 16px;
+		color: #ffffff;
+		font-family: "Lucida Sans";
+		text-align: center;
+		align-items: center;
+		display: flex;
+		justify-content: right;
+
+		@media (max-width: 768px) {
+			justify-content: center;
+		}
+	}
+}
