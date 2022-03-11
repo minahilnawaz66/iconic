@@ -126,20 +126,14 @@
 			font-weight: bold;
 			font-family: "Arial";
 			margin: 0 10px;
+			background-image: linear-gradient(0deg, #ffae22 0%, #e25500 100%);
 
+			&.hover {
+				background-image: linear-gradient(0deg, #e25500 0%, #ffae22 100%);
+			}
 			@media (max-width: 1024px) {
 				width: 100%;
 			}
-		}
-
-		.learnMore , .signup {
-			background-image: linear-gradient(0deg, #ffae22 0%, #e25500 100%);
-
-		}
-
-		.signup:hover,
-		.learnMore:hover {
-			background-image: linear-gradient(0deg, #e25500 0%, #ffae22 100%);
 		}
 	}
 }
