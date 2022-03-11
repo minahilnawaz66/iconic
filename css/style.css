@@ -528,32 +528,33 @@ body {
   cursor: pointer;
 }
 
-.carousel {
+.banner {
   display: flex;
   background-image: linear-gradient(0deg, #e25500 0%, #ffae22 100%);
+  background-color: orange;
   width: 100%;
   filter: drop-shadow(0 0 3.5px rgba(0, 0, 0, 0.75));
 }
 @media (max-width: 768px) {
-  .carousel {
+  .banner {
     flex-direction: column;
   }
 }
-.carousel .carousel-item-text {
+.banner .banner-caption {
   padding: 60px 110px;
   flex: 0 0 50%;
 }
 @media (max-width: 1024px) {
-  .carousel .carousel-item-text {
+  .banner .banner-caption {
     padding: 25px;
   }
 }
 @media (max-width: 768px) {
-  .carousel .carousel-item-text {
+  .banner .banner-caption {
     padding: 80px;
   }
 }
-.carousel .carousel-item-text h1 {
+.banner .banner-caption h1 {
   font-size: 27px;
   letter-spacing: 0;
   line-height: 29px;
@@ -563,11 +564,11 @@ body {
   filter: drop-shadow(0.5px 0.866px 0.5px rgba(0, 0, 0, 0.34));
 }
 @media (max-width: 1024px) {
-  .carousel .carousel-item-text h1 {
+  .banner .banner-caption h1 {
     font-size: 22px;
   }
 }
-.carousel .carousel-item-text p {
+.banner .banner-caption p {
   font-size: 15px;
   line-height: 17px;
   color: #ffd898;
@@ -576,7 +577,7 @@ body {
   filter: drop-shadow(0.5px 0.866px 0.5px rgba(0, 0, 0, 0.34));
   text-transform: uppercase;
 }
-.carousel .carousel-item-image {
+.banner .banner-item-image {
   padding-top: 20px;
   display: flex;
   flex: 0 0 50%;
@@ -584,15 +585,15 @@ body {
   justify-content: right;
 }
 @media (max-width: 1024px) {
-  .carousel .carousel-item-image {
+  .banner .banner-item-image {
     padding-right: 0;
   }
 }
-.carousel .carousel-item-image .carousel-img {
+.banner .banner-item-image .banner-img {
   height: 100%;
 }
 @media (max-width: 1024px) {
-  .carousel .carousel-item-image .carousel-img {
+  .banner .banner-item-image .banner-img {
     width: 100%;
   }
 }
@@ -626,7 +627,7 @@ body {
   font-family: "Georgia";
   font-weight: 500;
 }
-.registration .btn-reg {
+.registration .btn {
   padding-top: 20px;
   flex: 0 0 50%;
   padding-right: 80px;
@@ -634,12 +635,12 @@ body {
   display: flex;
 }
 @media (max-width: 1024px) {
-  .registration .btn-reg {
+  .registration .btn {
     padding-right: 0;
   }
 }
-.registration .btn-reg .signup,
-.registration .btn-reg .learnMore {
+.registration .btn .signup,
+.registration .btn .learnMore {
   cursor: pointer;
   width: 209px;
   height: 42px;
@@ -655,15 +656,16 @@ body {
   margin: 0 10px;
 }
 @media (max-width: 1024px) {
-  .registration .btn-reg .signup,
-.registration .btn-reg .learnMore {
+  .registration .btn .signup,
+.registration .btn .learnMore {
     width: 100%;
   }
 }
-.registration .btn-reg .learnMore {
+.registration .btn .learnMore, .registration .btn .signup {
   background-image: linear-gradient(0deg, #ffae22 0%, #e25500 100%);
 }
-.registration .btn-reg .signup {
+.registration .btn .signup:hover,
+.registration .btn .learnMore:hover {
   background-image: linear-gradient(0deg, #e25500 0%, #ffae22 100%);
 }
 
