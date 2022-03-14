@@ -397,7 +397,7 @@ body {
 .main .article-section .article-content .news-section {
   padding: 0 30px;
 }
-.main .article-section .article-content .news-section h1 {
+.main .article-section .article-content .news-section h4 {
   font-size: 18px;
   letter-spacing: -1px;
   line-height: 16px;
@@ -511,7 +511,9 @@ body {
 .main-body-content .main-content {
   padding: 30px 0;
 }
-.main-body-content .main-content h1 {
+.main-body-content .main-content h3 {
+  font-size: 20px;
+  line-height: 24px;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -621,7 +623,7 @@ body {
     padding: 0 50px;
   }
 }
-.registration .content h3 {
+.registration .content h2 {
   font-size: 20px;
   letter-spacing: 0px;
   line-height: 26px;
@@ -657,19 +659,17 @@ body {
   font-weight: bold;
   font-family: "Arial";
   margin: 0 10px;
+  background-image: linear-gradient(0deg, #ffae22 0%, #e25500 100%);
+}
+.registration .btn .signup.hover,
+.registration .btn .learnMore.hover {
+  background-image: linear-gradient(0deg, #e25500 0%, #ffae22 100%);
 }
 @media (max-width: 1024px) {
   .registration .btn .signup,
 .registration .btn .learnMore {
     width: 100%;
   }
-}
-.registration .btn .learnMore, .registration .btn .signup {
-  background-image: linear-gradient(0deg, #ffae22 0%, #e25500 100%);
-}
-.registration .btn .signup:hover,
-.registration .btn .learnMore:hover {
-  background-image: linear-gradient(0deg, #e25500 0%, #ffae22 100%);
 }
 
 #footer {
